@@ -1,7 +1,6 @@
 import { PictureCollection } from './ui/picture-collections';
 import craterLake from '../assets/craterLake.webp';
 import cruise from '../assets/cruise.webp';
-import denver from '../assets/denver.webp';
 import denverGroup from '../assets/denverGroup.webp';
 
 const TravelCarousel = () => {
@@ -13,10 +12,6 @@ const TravelCarousel = () => {
     {
       name: 'cruise',
       src: cruise,
-    },
-    {
-      name: 'denver',
-      src: denver,
     },
     {
       name: 'denver group',
