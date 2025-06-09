@@ -14,8 +14,8 @@ const AboutSection = () => {
       </header>
       <div className="flex justify-center items-center flex-wrap gap-8">
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0.0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: 'easeInOut' }}
           className="space-y-12"
         >
