@@ -14,7 +14,7 @@ function App() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8, ease: 'easeInOut' }}
         >
-          <h1 className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+          <h1 className="text-3xl md:text-7xl font-bold text-foreground text-center">
             Hello my name is <span className="text-primary">Zach</span>
           </h1>
           <ProfilePhoto />
@@ -36,9 +36,9 @@ function App() {
           transition={{ delay: 0.3, duration: 0.8, ease: 'easeInOut' }}
         >
           {/* tell my story */}
-          <div className="flex-1 flex flex-col justify-center items-start ">
+          <div className="flex-1 flex flex-col justify-center items-start relative gap-4">
             {/* getting started in programming */}
-            <Card>
+            <Card className="z-10 max-w-96">
               <CardHeader>
                 <CardTitle className="text-xl md:text-3xl font-semibold text-left text-primary">
                   How it started
@@ -55,7 +55,7 @@ function App() {
               </CardContent>
             </Card>
             {/* experience */}
-            <Card>
+            <Card className="z-10 max-w-96">
               <CardHeader>
                 <CardTitle className="text-xl md:text-3xl font-semibold text-left text-primary">
                   Since then
@@ -73,7 +73,7 @@ function App() {
             </Card>
           </div>
           {/* animation or photo */}
-          <div className=" flex-2"></div>
+          <div className=" flex-1"></div>
         </motion.section>
       </main>
     </>
