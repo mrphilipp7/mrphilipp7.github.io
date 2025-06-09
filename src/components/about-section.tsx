@@ -5,15 +5,14 @@ import TravelCarousel from './travel-carousel';
 
 const AboutSection = () => {
   return (
-    <section
-      className="h-screen w-full mx-auto container flex justify-center items-center flex-col gap-8"
-      id="about"
-    >
-      <h1 className="text-3xl md:text-7xl font-bold text-foreground text-center">
-        A little bit about{' '}
-        <span className="text-primary whitespace-nowrap">me</span>
-      </h1>
-      <div className="flex flex-wrap justify-center items-center md:gap-6">
+    <section className="h-screen w-full mx-auto container " id="about">
+      <header className="text-center pb-12 pt-4">
+        <h2 className="text-3xl md:text-7xl font-bold text-foreground text-center">
+          A little about{' '}
+          <span className="text-primary whitespace-nowrap">me</span>
+        </h2>
+      </header>
+      <div className="flex justify-center items-center flex-wrap gap-8">
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
