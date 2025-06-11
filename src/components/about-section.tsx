@@ -5,7 +5,7 @@ import TravelCarousel from './travel-carousel';
 
 const AboutSection = () => {
   return (
-    <section className="h-screen w-full mx-auto container " id="about">
+    <section className="w-full mx-auto container " id="about">
       <header className="text-center pb-12 pt-4">
         <h2 className="text-3xl md:text-7xl font-bold text-foreground text-center">
           A little about{' '}
@@ -67,6 +67,14 @@ const AboutSection = () => {
           </Card>
         </motion.div>
       </div>
+      {/* <div className="text-center py-4">
+        <a
+          href="#skills"
+          className="mt-6 text-primary hover:underline text-sm font-medium transition-colors cursor-pointer z-10 relative"
+        >
+          Projects ↓
+        </a>
+      </div> */}
     </section>
   );
 };
